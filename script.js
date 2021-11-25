@@ -15,6 +15,8 @@ function getTextInput() {
     itemLista.className = 'item-lista'
     //chama função p tornar clicavel e mudar cor
     itemLista.addEventListener('click', changeColor);
+    //chama função para tornar riscavel c/ 2 cliques
+    itemLista.addEventListener('dblclick', riscaTarefa)
     //criar variavel que guarde onde quero criar o elemento
     let posItem = document.getElementById('lista-tarefas');
     //atribuir o valor do texto ao elemento que criei
@@ -30,8 +32,8 @@ function getTextInput() {
 //let mudarCorTarefa = document.querySelector('.selected-item')
 
 //criar variavel que guarde os itens que o usuario adicionou à lista
-let listaPronta = document.querySelector('#lista-tarefas').children;
-console.log(listaPronta)
+//let listaPronta = document.querySelector('#lista-tarefas').children;
+//console.log(listaPronta)
 
 //ref: https://developer.mozilla.org/pt-BR/docs/Web/API/Node/contains
 //https://www.w3schools.com/jsref/met_element_remove.asp
@@ -53,7 +55,7 @@ function changeColor(event) {
     //event.target.classList.add('selected-item')     
 }
 
-//https://stackoverflow.com/questions/67769790/how-do-i-delete-list-items-with-clear-button-javascript
+//ref: https://stackoverflow.com/questions/67769790/how-do-i-delete-list-items-with-clear-button-javascript
 function clearAll() {
     /* let listaToda = document.getElementById('lista-tarefas').children;
     for (let c = 0; c < listaToda.length; c += 1) {
@@ -61,6 +63,17 @@ function clearAll() {
     } */
     document.getElementById('lista-tarefas').innerHTML = '';
 }
+
+function riscaTarefa(event) {
+    let statusTarefa = event.target;
+    if (statusTarefa.classList.contains('completed')){
+        statusTarefa.classList.remove('completed')
+    } else {
+    event.target.classList.add('completed')
+    }
+}
+
+
 
 /* if (itemSelected !== null) {
         itemSelected.classList.remove('selected-item');
