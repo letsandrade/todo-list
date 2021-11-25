@@ -45,7 +45,7 @@ function changeColor(event) {
         }
         
     }
-    let mudancaCor = event.target.classList.add('selected-item')
+    event.target.classList.add('selected-item')
     //adicionar a classe selected sem remover a anterior
     //event.target.classList.add('selected-item')     
 }
