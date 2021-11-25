@@ -25,7 +25,7 @@ function getTextInput() {
 
 
 //cria elemento
-let mudarCorTarefa = document.querySelector('.selected-item')
+//let mudarCorTarefa = document.querySelector('.selected-item')
 
 //criar variavel que guarde os itens que o usuario adicionou à lista
 let listaPronta = document.querySelector('#lista-tarefas').children;
@@ -35,17 +35,19 @@ console.log(listaPronta)
 function changeColor(event) {
     //criar variavel que guarde os itens que o usuario adicionou à lista
     let listaPronta = document.querySelector('#lista-tarefas').children;
+
     //fazer com que o clique mude a classe do item clicado
     //event.target.className = 'selected-item'
-    for (let i = 0; i > listaPronta.length - 1; i += 1) {
+    for (let i = 0; i < listaPronta.length; i += 1) {
         
         if (listaPronta[i].classList.contains('selected-item')) {
         listaPronta[i].classList.remove('selected-item')    
         }
-    
+        
     }
+    let mudancaCor = event.target.classList.add('selected-item')
     //adicionar a classe selected sem remover a anterior
-    event.target.classList.add('selected-item')    
+    //event.target.classList.add('selected-item')     
 }
 
 /* if (itemSelected !== null) {
