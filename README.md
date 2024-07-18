@@ -71,7 +71,7 @@ O projeto propõe o desenvolvimento de uma aplicação simples em HTML, CSS e Ja
     cd todo-list
 ```
 
-3. Abra o projeto usando Live Server (ou qualquer solução similar de sua preferência), e você poderá ver a página no seu navegador e interagir com o formulário.
+3. Abra o projeto usando Live Server (ou qualquer solução similar de sua preferência), e você poderá ver a página no seu navegador e interagir com a aplicação.
 
 Fique à vontade para explorar o código, modificá-lo e aprender com ele!
 
