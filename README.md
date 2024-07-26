@@ -17,7 +17,7 @@ The project proposes the development of a simple application, using HTML, CSS an
 1. Clone this repository:
 
 ```sh
-    git clone https://github.com/your-user/todo-list.git
+    git clone https://github.com/letsandrade/todo-list.git
 ```
 
 2. Navigate to the project directory:
@@ -62,7 +62,7 @@ O projeto propõe o desenvolvimento de uma aplicação simples em HTML, CSS e Ja
 1. Clone esse repositorio:
 
 ```sh
-    git clone https://github.com/your-user/todo-list.git
+    git clone https://github.com/letsandrade/todo-list.git
 ```
 
 2. Vá até o diretório do projeto:
